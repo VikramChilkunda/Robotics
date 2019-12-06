@@ -1,0 +1,347 @@
+@keyframes typing {
+        from { width: 0 }
+        to { width: 100% }
+}
+@keyframes blink-caret {
+        from, to { border-color: transparent }
+        50% { border-color: #03c2fc; }
+}
+html, body{
+        margin: 0;
+        background: black;
+        max-width: 100% !important;
+        overflow-x: hidden;
+}
+body{
+        display: table;
+}
+.large_content{
+        width: 99vw;
+        height: 100vh;
+        font-family: "Open Sans";
+        text-transform: uppercase;
+        font-weight: 800;
+        background: black;
+        /*background-color: gray;*/
+        max-width: 100%;
+        position: relative;
+        transition: 0.01s ease-in-out;
+        z-index: 1;
+        /*opacity: 0.6;*/
+}
+.large_content iframe{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 120%;
+        height: 120%;
+        z-index: -1;
+        opacity: 0.9;
+        margin-left: -11%;
+        margin-top: -6%;
+        pointer-events: none;
+}
+.large_content h1{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        margin: auto;
+        width: 60vw;
+        font-size: 3.4889vh;
+        font-family: "Open Sans";
+        font-weight: 800;
+        color: white;
+        overflow: visible;
+        margin: 0 auto;
+        letter-spacing: .25em;
+        text-align: center;
+        line-height: 7vh;
+}
+.bg-dark{
+        background-color: rgba(0,0,0,0) !important;
+        position: fixed;
+        width: 100vw;
+        z-index: 2;
+        font-family: Cabin;
+        text-transform: uppercase;
+}
+.about-2{
+        width: 80%;
+        margin: auto;
+}
+.fa-chevron-down, .fa-chevron-up{
+        color: white;
+        position: absolute;
+        bottom: 3.5556vh;
+        left: 50%;
+        transform: translateX(-50%);
+}
+.about_container{
+        padding: 0 10vw;
+        background-color: black;
+        width: 100%;
+        color: white !important;
+        position: relative;
+        padding-bottom: 5vw;
+}
+.aboutmission{
+        display: flex;
+        justify-content: space-between;
+}
+.fa-chevron-down:hover, .fa-chevron-up:hover{
+        cursor: pointer;
+}
+.square-card{
+        border: 1px solid #03c2fc;
+        /*margin-left: 16vw;*/
+        margin-top: 5vw;
+        width: 35vw;
+        border-radius: 10px;
+        padding: 2.0833vw;
+        padding-top: 1vw;
+        padding-bottom: 1vw;
+        height: 20vw;
+}
+.square-card h1{
+        padding-top: 5vw;
+        color:  #03c2fc;
+        float: left;
+        height: 100%;
+        max-width: 45%;
+        text-transform: uppercase;
+        font-family: "Cabin";
+        font-weight: bold;
+        font-size: 3.1vw;
+}
+.about .square-card-text{
+        float: right;
+        max-width: 55%;
+        font-size: 1.1625vw;
+        margin-top: 1.5625vw;
+}
+.mission .square-card-text{
+        float: right;
+        max-width: 55%;
+        font-size: 1.1625vw;
+        margin-top: 1.04166666vw;
+}
+.frc{
+        width: 50vw !important;
+        margin-left: 50%;
+        margin-top: 1vw;
+        transform: translateX(-50%);
+}
+.frc h1{
+        padding-top: 3.5vw;
+}
+.frc .square-card-text{
+        float: right;
+        max-width: 50%;
+        font-size: 1.05vw;
+        margin-top: 0.3vw;
+}
+.lego_container{
+        padding: 0 10vw;
+        width: 100% !important;
+        color: white !important;
+        position: relative;
+        padding-bottom: 5vw;
+        z-index: 1;
+        margin: 0 !important;
+}
+.lego_container img{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.3;
+        z-index: -1;
+}
+.join h1{
+        padding-top: 3.133vw;
+        max-width: 45%;
+}
+.join .square-card-text{
+        float: right;
+        max-width: 50%;
+        font-size: 1.1625vw;
+        margin-top: 1.04166666vw;   
+}
+.volunteer h1{
+        padding-top: 6.133vw;
+}
+.volunteer .square-card-text{
+        float: right;
+        max-width: 70%;
+        font-size: 1.2625vw;
+        margin-top: 0.4vw;   
+}
+.fll .square-card-text{
+        float: right;
+        max-width: 70%;
+        font-size: 1.21vw;
+        margin-bottom: 1.0vw;
+}
+#container{
+        width: 80vw !important;
+        height: 20vw;
+}
+.fll{
+        width: 50vw !important;
+}
+.sponsor_container{
+        padding: 0 10vw;
+        width: 100% !important;
+        color: white !important;
+        padding-bottom: 5vw;
+        z-index: 1;
+        margin: 0 !important;
+}
+.thanks{
+        height: 19vw;
+        padding: 0 0;
+        text-align: center;
+}
+.thanks h1{
+        width: 100%;
+        max-width: 100% !important;
+        font-size: 3vw;
+        line-height: 10vw !important;
+        padding-top: 0;
+        height: 40%;
+        position: static;
+}
+.thanks p{
+        font-size: 1.1vw;
+        max-width: 90%;
+        display: inline-block;
+}
+.square-card-sponsor{
+        border: 1px solid #03c2fc;
+        width: 20vw;
+        height: 44.44vh;
+        border-radius: 1.04vw;
+        /*padding: 2.0833vw;*/
+        /*padding-top: 1vw;*/
+        /*padding-bottom: 1vw;*/
+        position: relative;
+}
+.square-card-sponsor-h1{
+        height: 8.888vh;
+        border-bottom: 1px solid #03c2fc;
+        padding: 20px;
+        text-align: center;
+        font-family: "Open Sans";
+        font-weight: 700;
+        color: #03c2fc;
+        text-transform: uppercase;
+}
+.square-card-sponsor-h1 h1{
+        font-family: "Open Sans";
+        font-weight: 700;
+        font-size: 1.927vw;
+}
+.square-card-sponsor-img{
+        position: relative;
+        width: 100%;
+        height: 34.6vh;
+}
+.square-card-sponsor-img img{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 1.04vw;
+}
+.listsponsors{
+        display: flex;
+        justify-content: space-between;
+    
+}
+.jmaintenance img{
+        height: 5vw;
+}
+.meggitt img, .github img{
+         height: 8vw;
+}
+#spacer{
+        height: 5vh;
+}
+@media only screen and (max-width: 500px){
+        #desktop{
+                display: none;
+        }
+        .fa-chevron-down, .fa-chevron-up{
+                display: none !important;
+        }
+        .square-card{
+                width: 80%;
+                color: white;
+                height: 30vh;
+                margin: auto;
+                margin-bottom: 5vh;
+                font-size: 30vh !important;
+                padding: 1.0vh;
+        }
+        .square-card-sponsor{
+                height: 15vh;
+        }
+        .square-card h1{
+                font-size: 2.5vh !important;
+                height: 7vh;
+                width: 100%;
+                text-align: center;
+                max-width: 100%;
+                padding-top: 2vh;
+                padding-bottom: 1vh;
+                margin-bottom: 1vh;
+        }
+        .square-card-text{
+                font-size: 1.5vh !important;
+                text-align: center;
+                width: 100% !important;
+                max-width: 100% !important;
+                font-family: Montserrat;
+        }
+        .square-card-sponsor-h1{
+                height: 3vh;
+                width: 100%;
+                padding: 1.4vw;
+                font-size: 30vh !important;
+        }
+        .square-card-sponsor-img{
+                position: relative;
+                width: 100%;
+                height: 11vh;
+        }
+        .square-card-sponsor-img img{
+                width: 90%;
+                height: 9.9vh;
+        }
+        .large_content{
+                height: 100vh;
+        }
+        .listsponsors{
+                max-width: 90%;
+                margin: auto;
+        }
+        .square-card-sponsor-h1 h1{
+                font-size: 1.5vw;
+        }
+        .jmaintenance img{
+                height: 5vw;
+        }
+        .meggitt img, .github img{
+                 height: 8vw;
+        }
+}
+@media only screen and (min-width: 1280px){
+        
+        #mobile{
+                display: none;
+        }
+}
