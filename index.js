@@ -1,10 +1,5 @@
-$("#chairmans").css("display", "none");
-$(".large_content").css("background-color", "black");
-// window.setTimeout(function(){
-//          $("#chairmans").css("display", "block");
-// }, 2380);
 var vh = $(window).height() * 0.01;
-var fadeInDuration = 1000;
+
 $("#1").on("click", function(){
         $('html, body').animate({ scrollTop: $(".about").offset().top - 1.5*vh}, 700);
 });
@@ -42,3 +37,11 @@ function typing(){
         }
 }
 typing(); 
+$(document).ready(function(){
+	$(".fa-bars").click(function(){
+		$(".side").addClass("sidepopup");
+	});
+	$(".fa-times").click(function(){
+		$(".side").removeClass("sidepopup");
+	});
+});
