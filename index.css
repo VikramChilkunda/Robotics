@@ -21,7 +21,7 @@ body{
         font-family: "Open Sans";
         text-transform: uppercase;
         font-weight: 800;
-        background: black;
+        background: url("https://mms.businesswire.com/media/20200104005005/en/765120/5/Lipofskydotcom-904835.jpg");
         /*background-color: gray;*/
         max-width: 100%;
         position: relative;
@@ -79,7 +79,8 @@ body{
 }
 .about_container{
         padding: 0 10vw;
-        background-color: black;
+        background: black;
+        background-size: 70%;
         width: 100%;
         color: white !important;
         position: relative;

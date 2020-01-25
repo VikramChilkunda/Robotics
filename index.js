@@ -1,8 +1,8 @@
 $("#chairmans").css("display", "none");
 $(".large_content").css("background-color", "black");
-window.setTimeout(function(){
-         $("#chairmans").css("display", "block");
-}, 2380);
+// window.setTimeout(function(){
+//          $("#chairmans").css("display", "block");
+// }, 2380);
 var vh = $(window).height() * 0.01;
 var fadeInDuration = 1000;
 $("#1").on("click", function(){
