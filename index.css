@@ -6,6 +6,11 @@
         from, to { border-color: transparent }
         50% { border-color: #03c2fc; }
 }
+@keyframes fade-in{
+        from {filter: blur(20px)}
+        to {filter: blur(0px)}
+}
+
 html, body{
         margin: 0;
         background: black;
@@ -21,14 +26,23 @@ body{
         font-family: "Open Sans";
         text-transform: uppercase;
         font-weight: 800;
-        background: url("https://mms.businesswire.com/media/20200104005005/en/765120/5/Lipofskydotcom-904835.jpg");
         background-position: center;
+        background-size: cover;
         /*background-color: gray;*/
         max-width: 100%;
         position: relative;
         transition: 0.01s ease-in-out;
         z-index: 1;
         /*opacity: 0.6;*/
+}
+#large_content_background{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100%;
+        z-index: -1;
+        animation: fade-in 3s;
 }
 .large_content iframe{
         position: absolute;
@@ -223,7 +237,7 @@ body{
 .square-card-sponsor{
         border: 1px solid #03c2fc;
         width: 20vw;
-        height: 44.44vh;
+        height: 51        .44vh;
         border-radius: 1.04vw;
         /*padding: 2.0833vw;*/
         /*padding-top: 1vw;*/
@@ -231,7 +245,8 @@ body{
         position: relative;
 }
 .square-card-sponsor-h1{
-        height: 8.888vh;
+        height: 15.888vh;
+        margin: auto;
         border-bottom: 1px solid #03c2fc;
         padding: 20px;
         text-align: center;
@@ -239,8 +254,13 @@ body{
         font-weight: 700;
         color: #03c2fc;
         text-transform: uppercase;
+        position: relative;
 }
 .square-card-sponsor-h1 h1{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
         font-family: "Open Sans";
         font-weight: 700;
         font-size: 1.927vw;
@@ -262,18 +282,28 @@ body{
 .listsponsors{
         display: flex;
         justify-content: space-between;
-    
+}
+.two-cards{
+        width: 70%;
+        margin: auto;
 }
 .jmaintenance img{
         height: 5vw;
 }
+.pswa img{
+        height: 7.5vw;
+}
+
 .meggitt img, .github img{
          height: 8vw;
+}
+.mc img{
+        height: 7vw;
 }
 #spacer{
         height: 5vh;
 }
-@media only screen and (max-width: 500px){
+@media only screen and (max-width: 501px){
         #desktop{
                 display: none;
         }
@@ -341,13 +371,13 @@ body{
                  height: 8vw;
         }
 }
-@media only screen and (min-width: 1280px){
+@media only screen and (min-width: 1279px){
         
         #mobile{
                 display: none;
         }
 }
-@media only screen and (max-width: 1600px){
+@media only screen and (max-width: 1599px){
         .side{
                 height: 73vh;
         }
@@ -355,7 +385,7 @@ body{
                 font-size: 25px;
         }
 }
-@media only screen and (max-width: 1366px){
+@media only screen and (max-width: 1365px){
         .side{
                 height: 43vh;
         }
@@ -363,7 +393,7 @@ body{
                 font-size: 20px;
         }
 }
-@media only screen and (max-width: 1280px){
+@media only screen and (max-width: 1279px){
         .side{
                 height: 33vh;
         }
@@ -443,4 +473,8 @@ html, body{
 	font-weight: bold;
 	font-size: 75px;
 	margin-bottom: 20px;
+}
+.jpllogoclass img{
+        height: 40%;
+        width: 80%;
 }

@@ -1,0 +1,122 @@
+html, body{
+    margin: 0;
+    background: black !important;
+    max-width: 100% !important;
+    overflow-x: hidden;
+    color: #03c2fc !important;
+    padding: 3vw;
+    height: 100vh;
+}
+body{
+        display: table;
+}
+
+@media screen and (max-width: 600px){
+    html, body{
+        padding: 6vw;
+    }
+}
+
+/*side nav*/
+.side{
+	height: 100vh;
+	width: 0;
+	background-color: rgba(0,0,0,0.8);
+	visibility: hidden;
+	transition: 0.3s ease-in-out;
+	position: absolute;
+	left: -25vw;
+	top: 0;
+	padding-top: 100px;
+}
+.sidepopup{
+	padding-top: 100px;
+	width: 25vw;
+	box-sizing: border-box;
+	visibility: visible;
+	transition: 0.3s ease-in-out;
+	left: 0;
+}
+
+.sidenav{
+	width: 100vw;
+	position: absolute;
+	height: 40px;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	padding: 10px;
+	display: block;
+	text-align: center;
+}
+html, body{
+	margin: 0;
+}
+.fa-bars{
+	padding: 5px 8px;
+	border: 2px solid black;
+	float: left;
+	color: white;
+}
+.fa:hover{
+	cursor: pointer;
+}
+.fa-times{
+	position: absolute;
+	top: 15px;
+	right: 15px;
+	color: rgba(235, 64, 52, 1);
+}
+.item{
+	z-index: 10;
+	text-transform: uppercase;
+	color: white;
+	font-weight: normal;
+	font-size: 30px;
+	list-style: none;
+}
+.item a{
+	color: white;
+	font-family: "Open Sans";
+	text-decoration: none;
+	letter-spacing: 0em;
+}
+.brand{
+	color: #03c2fc;
+	font-family: "Open Sans";
+	text-decoration: none;
+	letter-spacing: -1;
+	font-weight: bold;
+	font-size: 75px;
+	margin-bottom: 20px;
+}
+/*end nav stuff*/
+
+.title{
+    font-family: "Open Sans";
+}
+video{
+    width: 110%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover !important;
+}
+@media screen and (min-width: 1279px){
+    .video-robot{
+        width: 1280px;
+        height: 720px;
+    }
+}
+.iframe-container{
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%;
+}
+.iframe-container iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}

@@ -42,7 +42,7 @@ body{
     margin-left: 50vw;
     transform: translate(-50%);
     text-align: center;
-    padding: 5vh !important;
+    padding: 3.5vw !important;
     height: 10vw !important;
     margin-top: 5vw;
 }
@@ -85,9 +85,75 @@ body{
     height: 100%;
     border-radius: 5px;
 }
-video{
-    width: 110%;
-    height: 100%;
-    position: absolute;
-    object-fit: cover !important;
+.side{
+	height: 100vh;
+	width: 0;
+	background-color: rgba(0,0,0,0.8);
+	visibility: hidden;
+	transition: 0.3s ease-in-out;
+	position: absolute;
+	left: -25vw;
+	top: 0;
+	padding-top: 100px;
+}
+.sidepopup{
+	padding-top: 100px;
+	width: 25vw;
+	box-sizing: border-box;
+	visibility: visible;
+	transition: 0.3s ease-in-out;
+	left: 0;
+}
+
+.sidenav{
+	width: 100vw;
+	position: absolute;
+	height: 40px;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	padding: 10px;
+	display: block;
+	text-align: center;
+}
+html, body{
+	margin: 0;
+}
+.fa-bars{
+	padding: 5px 8px;
+	border: 2px solid black;
+	float: left;
+	color: white;
+}
+.fa:hover{
+	cursor: pointer;
+}
+.fa-times{
+	position: absolute;
+	top: 15px;
+	right: 15px;
+	color: rgba(235, 64, 52, 1);
+}
+.item{
+	z-index: 10;
+	text-transform: uppercase;
+	color: white;
+	font-weight: normal;
+	font-size: 30px;
+	list-style: none;
+}
+.item a{
+	color: white;
+	font-family: "Open Sans";
+	text-decoration: none;
+	letter-spacing: 0em;
+}
+.brand{
+	color: #03c2fc;
+	font-family: "Open Sans";
+	text-decoration: none;
+	letter-spacing: -1;
+	font-weight: bold;
+	font-size: 75px;
+	margin-bottom: 20px;
 }
