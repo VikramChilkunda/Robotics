@@ -321,6 +321,9 @@ body{
         }
         .square-card-sponsor{
                 height: 15vh;
+                width: 28vw;
+                padding-left: 5%;
+                padding-right: 5%;
         }
         .square-card h1{
                 font-size: 2.5vh !important;
@@ -370,6 +373,37 @@ body{
         .meggitt img, .github img{
                  height: 8vw;
         }
+        .thanks p{
+                display: block;
+        }
+        .pswa img, .mc img{
+                height: 7vw;
+        }
+        .side{
+		font-size: 8vw !important;
+	    align-items: center;
+	    padding-top: 0 !important;
+	}
+	.fa-times{
+		font-size: 5.6vw !important;
+	}
+	.sidepopup{
+		padding-top: 70px !important;
+		width: 100vw !important;
+		padding-left: 9vh !important;
+		padding-right: 9vh !important;
+		/*padding-top: 60px !important;*/
+		font-size: 8vw !important;
+	}
+	.sidepopup .item, .side .item{
+		font-size: 8vw !important;
+	}
+	.brand{
+	        font-size: 25px !important;
+	}
+	.item a{
+	        font-size: 20px !important;
+	}
 }
 @media only screen and (min-width: 1279px){
         
@@ -438,7 +472,7 @@ html, body{
 }
 .fa-bars{
 	padding: 5px 8px;
-	border: 2px solid black;
+	/*border: 2px solid black;*/
 	float: left;
 	color: white;
 }

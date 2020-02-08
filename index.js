@@ -1,13 +1,13 @@
 var vh = $(window).height() * 0.01;
 
 $("#1").on("click", function(){
-        $('html, body').animate({ scrollTop: $(".about").offset().top - 1.5*vh}, 700);
+        $('html, body').animate({ scrollTop: $(".about_container").offset().top} , 700);
 });
 $("#2").on("click", function(){
-        $('html, body').animate({ scrollTop: $(".fll").offset().top - (1*vh) }, 700);
+        $('html, body').animate({ scrollTop: $(".lego_container").offset().top}, 700);
 });
 $("#3").on("click", function(){
-        $('html, body').animate({ scrollTop: $(".thanks").offset().top - (1.5*vh)}, 700);
+        $('html, body').animate({ scrollTop: $(".sponsor_container").offset().top - (1.5*vh)}, 700);
 });
 $("#4").on("click", function(){
          $('html, body').animate({ scrollTop: 0}, 1700);
@@ -38,10 +38,11 @@ function typing(){
 }
 typing(); 
 $(document).ready(function(){
-	$(".fa-bars").click(function(){
-		$(".side").addClass("sidepopup");
-	});
-	$(".fa-times").click(function(){
-		$(".side").removeClass("sidepopup");
-	});
+	$(".fa-bars").on("click", function(){
+                $(".side").toggleClass("sidepopup");
+        });
+        $(".fa-times").on("click", function(){
+                $(".side").addClass("transition");
+                $(".side").removeClass("sidepopup");
+        });
 });
